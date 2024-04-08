@@ -19,9 +19,12 @@ int main() {
 	
     int num, sum = 0;
     // scanf
+    printf("Introduza um numero de 5 digitos: ");
+    scanf("%d", &num);
+
     while(num != 0) {
-        sum += //
+        sum += num % 10;
         num /= 10;
     }
-    printf
+    printf("%d", sum);
 }
