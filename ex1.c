@@ -20,15 +20,29 @@ Else if n>9 and it is an odd number, then print “odd”.
 int main() {
     int a, b;
     // precisa de um scanf
+    printf("Introduza o valor de a: ");
+    scanf("%d", &a);
+    printf("Introduza o valor de b: ");
+    scanf("%d", &b);
 
     for (int i = a; i <= b; i++) {
 
         //estão a faltar numeros
         if (i == 1) {
             printf("one\n");
-        } else if (i == 2) {
+        }else if (i == 2) {
             printf("two\n");
-        } else if (i == 8) {
+        } else if (i == 3) {
+            printf("tree\n");
+        } else if (i == 4) {
+            printf("four\n");
+        } else if (i == 5) {
+            printf("five\n");
+        } else if (i == 6) {
+            printf("six\n");
+        } else if (i == 7) {
+            printf("seven\n");
+        }else if (i == 8) {
             printf("eight\n");
         } else if (i == 9) {
             printf("nine\n");
