@@ -31,7 +31,7 @@ Output: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
 int main()
 {
     
-    int i, N;
+    int i, N,arr[MAX_SIZE];
 
     /* Input array size */
     printf("Enter size of array: ");
@@ -39,7 +39,9 @@ int main()
 
     /* Input elements in array */
     printf("Enter %d elements in the array : ", N);
-
+    for(i=0;i<N;i++){
+        scanf("%d",&arr[i]);
+    }
 
 
 
@@ -47,8 +49,11 @@ int main()
     /*
      * Print all elements of array
      */
+
     printf("\nElements in array are: ");
-    
+    for(i=0;i<N;i++){
+        printf("%d, ",arr[i]);
+    }
 
     return 0;
 }
