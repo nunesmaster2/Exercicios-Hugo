@@ -1,6 +1,7 @@
 /*
 
-Write a C program to delete duplicate elements from array. How to remove duplicate elements from array in C programming. After performing delete operation the array should only contain unique integer value. Logic to delete duplicate elements from array.
+Write a C program to delete duplicate elements from array. How to remove duplicate elements from array in C programming. 
+After performing delete operation the array should only contain unique integer value. Logic to delete duplicate elements from array.
 
 Example
 
@@ -29,7 +30,7 @@ int main()
 
     /* Input size of the array */
     printf("Enter size of the array : ");
-    
+    scanf("%d", &size);
 
     /* Input elements in the array */
     printf("Enter elements in array : ");
@@ -42,7 +43,21 @@ int main()
     /*
      * Find duplicate elements in array
      */
-  
+    for(j=0;j<size;j++){
+
+        for(k=j+1;k<size;k++){
+
+            if(arr[j]==arr[k]){
+
+                for(i=k;i<size-1;i++){
+                  arr[i]=arr[i+1];
+                  
+                }
+                size = size-1;
+                k--;
+            }
+        }
+    }
 
 
     /*
