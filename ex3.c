@@ -38,8 +38,8 @@ int main()
     printf("Enter any two numbers: ");
     scanf("%d%d", &num1, &num2);
     
-    maximum = max(num1, num2);  // Call maximum function
-    minimum = min(num1, num2);  // Call minimum function
+    // Call maximum function
+    // Call minimum function
     
     printf("\nMaximum = %d\n", maximum);
     printf("Minimum = %d", minimum);
@@ -53,7 +53,7 @@ int main()
  */
 int max(int num1, int num2)
 {
-    return (num1 > num2 ) ? num1 : num2;
+    
 }
 
 /**
@@ -61,5 +61,5 @@ int max(int num1, int num2)
  */
 int min(int num1, int num2) 
 {
-    return (num1 > num2 ) ? num2 : num1;
+    
 }
